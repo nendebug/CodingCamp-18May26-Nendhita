@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo-Life Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="dashboard-grid">
+
+    <section id="greeting" class="widget">
+      <p id="greeting-text">Good Morning</p>
+      <p id="greeting-time">08:30</p>
+      <p id="greeting-date">Monday, 26 May 2025</p>
+    </section>
+
+    <section id="timer" class="widget">
+      <p id="timer-display">25:00</p>
+      <p id="timer-complete" hidden>Session complete!</p>
+      <button id="timer-start">Start</button>
+      <button id="timer-stop">Stop</button>
+      <button id="timer-reset">Reset</button>
+    </section>
+
+    <section id="todo" class="widget">
+      <form id="todo-form">
+        <input id="todo-input" type="text" maxlength="500" placeholder="Add a task…" />
+        <button type="submit">Add</button>
+      </form>
+      <ul id="todo-list"></ul>
+    </section>
+
+    <section id="links" class="widget">
+      <form id="links-form">
+        <input id="link-name-input" type="text" placeholder="Name" />
+        <span id="link-name-error" class="error" hidden></span>
+        <input id="link-url-input" type="text" placeholder="https://…" />
+        <span id="link-url-error" class="error" hidden></span>
+        <button type="submit">Add Link</button>
+      </form>
+      <div id="links-list"></div>
+    </section>
+
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
